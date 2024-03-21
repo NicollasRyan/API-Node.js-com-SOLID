@@ -1,7 +1,5 @@
-import { PrismaUsersRepository } from "@/env/repositories/prisma-users-repositoriy";
-import { prisma } from "@/lib/prisma";
+import { PrismaUsersRepository } from "@/repositories/prisma/prisma-users-repositoriy";
 import { RegisterUsecase } from "@/use-cases/register";
-import { hash } from "bcryptjs";
 import { FastifyReply, FastifyRequest } from "fastify";
 import { z } from "zod";
 
